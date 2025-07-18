@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+    .form-container {
+        max-width: 500px;
+        margin: 100px auto;
+        padding: 20px;
+        background:#333;
+        border-radius: 5px;
+        font-weight: bold;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-container .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-container label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: medium;
+        color:white;
+    }   
+    
+    .form-container input,
+    .form-container select,
+    .form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    
+    .form-container button {
+        background: seagreen;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .form-container button:hover {
+        background: darkgreen;
+    }
+    .form-container h1{
+        font-size: large;
+        color: white;
+    }
+    .form-container .division span{
+        color:#fff;
+        font-size: medium;
+    }
+    .form-container .division a{
+        color:#46ae8d;
+        font-size: medium;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>WE</span>rwith<span>U</span></a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#service">Service</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#price">Price</a>
+            <a href="#client-section">Review</a>
+            <a href="#footer-section">Contact</a>
+        </nav>
+        <div id="menu-bars" class="fas fa-bars"></div>
+    </header>
+    <div class="form-container">
+        <center><h1>Booking Form</h1></center>
+        <form><b>
+            <div>
+                <label for="fname">First name</label>
+                <input type="text" name="fname" id="fname" placeholder="enter your first name" required><br><br>
+            </div>
+            <div>
+                <label for="lname">Lastname</label>
+                <input type="text" name="fname" id="lname" placeholder="enter your first name" required><br><br>
+            </div>
+            <div>
+                <label for="email">email</label>
+                <input type="text" name="fname" id="email" required><br><br>
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <textarea name="address" id="address" placeholder="enter the address " required></textarea><br><br>
+            </div>
+            <div>
+                <label for="contact">contact info</label>
+                <input type="text" pattern="\d{10}"  minlength="10" maxlength="10" name="contact" id="contact" required><br><br>
+            </div>
+            <div>
+                <button type="button" name="payment" onclick="navtoapayment()">Payment</button><br><br>
+            </div>
+            <div class="division">
+               <span>back to </span> <a href="index.html">Home</a>
+            </div></b>
+        </form>
+    </div>
+    <script>
+        function navtoapayment() {
+            window.location.href = 'payment.html';
+        }
+    </script>
+</body>
+</html>
