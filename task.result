@@ -1,0 +1,29 @@
+Restored missing static assets for the event-management site.
+
+Files added:
+- img1.jpg
+- img2.jpg
+- img3.jpg
+- img4.jpg
+- img5.jpg
+- img6.jpg
+- img7.jpg
+- img8.jpg
+- img9.jpg
+- client-1.jpg
+- client-2.jpg
+- client-3.jpg
+- bg.mp4
+- feed.mp4
+- video.mp4
+
+Files updated:
+- script.js
+- README.md
+
+Validation performed:
+- Verified every local asset reference in index.html, booking.html, feedback.html, payment.html, thank.html, style.css, and script.js resolves to an existing file exactly.
+- Preserved local page-load behavior by guarding menu and Swiper initialization in script.js.
+
+Reviewer note:
+- Exact original media files were not present in the workspace seed, so compatible placeholder replacements were added with the same case-sensitive filenames already referenced by the site.
