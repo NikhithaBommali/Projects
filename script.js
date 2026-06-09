@@ -8,7 +8,7 @@ window.onscroll=() =>{
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
 }
-var swiper=new swiper(".home-slider",{
+var swiper=new Swiper(".home-slider",{
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
